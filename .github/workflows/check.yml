@@ -1,0 +1,36 @@
+name: Check active SearXNG instances
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Probe instances
+        run: python check.py
+
+      - name: Commit active.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add active.json
+          if git diff --cached --quiet; then
+            echo "No changes, nothing to commit."
+          else
+            git commit -m "chore: update active.json ($(date -u +%Y-%m-%d))"
+            git push
+          fi

@@ -1,0 +1,8 @@
+{
+  "updated_at": null,
+  "source": "https://searx.space/data/instances.json",
+  "check_endpoint": "/search?q=example&format=json",
+  "criteria": "HTTP 200, valid SearXNG JSON with results key, no 403/429 or other errors",
+  "total": 0,
+  "instances": []
+}
