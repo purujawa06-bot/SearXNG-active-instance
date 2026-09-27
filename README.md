@@ -14,7 +14,6 @@ Daily list of active [SearXNG](https://github.com/searxng/searxng) instances, re
 {
   "updated_at": "2026-09-27T00:00:00Z",
   "source": "https://searx.space/data/instances.json",
-  "method": "scraping",
   "check_endpoint": "/search?q=example&format=json",
   "total_checked": 70,
   "total": 12,
