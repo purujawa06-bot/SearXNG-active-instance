@@ -1,24 +1,31 @@
 {
-  "updated_at": "2026-09-29T02:51:03Z",
+  "updated_at": "2026-09-30T02:32:24Z",
   "source": "https://searx.space/data/instances.json",
   "check_endpoint": "/search?q=example&format=json",
   "criteria": "HTTP 200, valid SearXNG JSON with results key, no 403/429 or other errors",
   "total_checked": 96,
-  "total": 2,
+  "total": 3,
   "instances": [
     {
       "url": "https://search.mectov.my.id/",
       "search_url": "https://search.mectov.my.id/search?q=example&format=json",
       "status": 200,
-      "response_time_ms": 840,
+      "response_time_ms": 894,
       "results_count": 0
     },
     {
       "url": "https://sx.xo.st/",
       "search_url": "https://sx.xo.st/search?q=example&format=json",
       "status": 200,
-      "response_time_ms": 865,
+      "response_time_ms": 1104,
       "results_count": 1
+    },
+    {
+      "url": "https://search.lumy.live/",
+      "search_url": "https://search.lumy.live/search?q=example&format=json",
+      "status": 200,
+      "response_time_ms": 1590,
+      "results_count": 110
     }
   ]
 }
