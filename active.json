@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T04:02:07Z",
+  "updated_at": "2026-10-14T02:16:27Z",
   "source": "https://searx.space/data/instances.json",
   "check_endpoint": "/search?q=example&format=json",
   "criteria": "HTTP 200, valid SearXNG JSON with results key, no 403/429 or other errors",
@@ -10,7 +10,7 @@
       "url": "https://search.mectov.my.id/",
       "search_url": "https://search.mectov.my.id/search?q=example&format=json",
       "status": 200,
-      "response_time_ms": 733,
+      "response_time_ms": 725,
       "results_count": 0
     }
   ]
