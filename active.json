@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T02:07:40Z",
+  "updated_at": "2026-10-22T02:01:53Z",
   "source": "https://searx.space/data/instances.json",
   "check_endpoint": "/search?q=example&format=json",
   "criteria": "HTTP 200, valid SearXNG JSON with results key, no 403/429 or other errors",
@@ -10,8 +10,8 @@
       "url": "https://search.lumy.live/",
       "search_url": "https://search.lumy.live/search?q=example&format=json",
       "status": 200,
-      "response_time_ms": 4546,
-      "results_count": 101
+      "response_time_ms": 1661,
+      "results_count": 106
     }
   ]
 }
